@@ -12,7 +12,7 @@ class ButtonMenu extends StatelessWidget {
     return Container(
         padding: EdgeInsets.zero,
         child: CupertinoButton(
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, option.route),
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 mainAxisSize: MainAxisSize.min,
